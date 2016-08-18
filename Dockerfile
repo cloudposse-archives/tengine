@@ -139,5 +139,7 @@ WORKDIR /etc/nginx
 
 EXPOSE 80 443
 
+ENTRYPOINT ["/bin/bash"]
+
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
 
